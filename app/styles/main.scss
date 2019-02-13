@@ -1,5 +1,4 @@
-$icon-font-path: '../fonts/';
-
+@import "../fonts/fontawesome5/web-fonts-with-css/css/fontawesome-all.min.css";
 // Required bootstrap don't touch
 @import "./bower_components/bootstrap4/scss/functions";
 @import "./bower_components/bootstrap4/scss/variables";
@@ -20,3 +19,8 @@ $icon-font-path: '../fonts/';
 // End variables
 // help styles
 
+@import "_helper";
+@import "_header";
+@import "_about";
+@import "_footer";
+@import "_hamburger";

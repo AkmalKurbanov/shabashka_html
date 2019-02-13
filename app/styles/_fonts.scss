@@ -1,2 +1,3 @@
 @import "mixins/fontface";
-@include font-face("fonts", "../fonts/fonts-name/fonts-Regular/fonts-Regular");
+@include font-face("OpenSans", "../fonts/open sans/open sans regular/OpenSans-Regular");
+@include font-face("OpenSans", "../fonts/open sans/open sans bold/OpenSans-Bold", 700);
