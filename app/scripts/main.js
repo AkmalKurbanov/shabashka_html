@@ -1,24 +1,25 @@
 $(document).ready(function () {
 
   // header
+  if ($(window).width() > 575) {
+    $(window).scroll(function () {
 
-  $(window).scroll(function () {
-
-    if ($(this).scrollTop() > 400) {
-      $('.header').fadeOut();
-    } else {
-      $('.header').fadeIn();
-    }
-  });
-
+      if ($(this).scrollTop() > 10) {
+        $('.header').fadeOut();
+      } else {
+        $('.header').fadeIn();
+      }
+    });
+  }
   // header end
 
 
 
   // mainSlider
 
-  var swiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
+  var swiper = new Swiper('.kind-js', {
+    slidesPerView: 3,
+    spaceBetween: 0,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -28,22 +29,23 @@ $(document).ready(function () {
   // mainSlider end
 
 
-   // scroll button
-   function scrollToSection(event) {
-     event.preventDefault();
-     var $section = $($(this).attr('href'));
-     $('html, body').animate({
-       scrollTop: $section.offset().top
-     }, 700);
-   }
-   $('[data-scroll]').on('click', scrollToSection);
-   // scroll button end
+  // scroll button
+  function scrollToSection(event) {
+    event.preventDefault();
+    var $section = $($(this).attr('href'));
+    $('html, body').animate({
+      scrollTop: $section.offset().top
+    }, 700);
+  }
+  $('[data-scroll]').on('click', scrollToSection);
+  // scroll button end
 
   // hamburger
   $('.hamburger').click(function () {
     $(this).toggleClass('openClose');
     $('.mnu-js').toggleClass('mobileMnu-js');
     $('.hamburger__line').toggleClass('lineBg');
+    $('.smoothScroll').fadeToggle();
   });
 
   $('.mnu-js').click(function () {
@@ -54,6 +56,23 @@ $(document).ready(function () {
   // hamburger end
 
 
+
+  // animation
+  if ($(window).width() > 575) {
+    var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: false,
+      live: true,
+      callback: function (box) {
+
+      },
+      scrollContainer: null
+    });
+    wow.init();
+  }
+  // animation end
 
 
 

@@ -19,6 +19,7 @@
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -51,7 +52,7 @@
       </div>
 
       <!-- header -->
-      <div class="header">
+      <div class="header wow fadeInDown">
         <div class="container">
           <div class="row flexWrap">
             <div class="col-lg-2 col-sm-8 col-6">
@@ -87,11 +88,11 @@
       <!-- header end -->
 
       <!-- parallaxSection -->
-      <div class="parallaxSection" data-parallax="scroll" data-image-src="images/headerSlider/item1.jpg">
+      <div class="parallaxSection" style="background-image: url('./images/headerSlider/item1.jpg');">
         <div class="container">
-          <!-- <div class="captionWrap">
-            <h1 class="caption">- Удивительный Кыргызстан! <br> Путешествие в <br> прошлое и будущее.</h1>
-          </div> -->
+          <div class="captionWrap">
+            <h1 class="caption wow fadeInUp">- Удивительный Кыргызстан! <br> Путешествие в <br> прошлое и будущее.</h1>
+          </div>
 
         </div>
         <a data-scroll="" href="#about" class="smoothScroll"></a>
@@ -101,29 +102,29 @@
       <!-- about  -->
       <div id="about" class="about" style="background-image: url('/images/about/about.jpg');">
         <div class="container">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+
         </div>
       </div>
       <!-- about end -->
+
+      <!-- kind -->
+      <div class="kind">
+        <div class="container">
+          <div class="swiper-container kind__slider kind-js">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide kind__item">Slide 1</div>
+              <div class="swiper-slide kind__item">Slide 1</div>
+              <div class="swiper-slide kind__item">Slide 1</div>
+              <div class="swiper-slide kind__item">Slide 1</div>
+              <div class="swiper-slide kind__item">Slide 1</div>
+              <div class="swiper-slide kind__item">Slide 1</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <!-- kind end -->
 
     </div>
     <!-- contentWrap -->
@@ -143,6 +144,7 @@
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <script src="/bower_components/swiper/dist/js/swiper.js"></script>
   <script src="/bower_components/parallax.js/parallax.min.js"></script>
+  <script src="/bower_components/wow/dist/wow.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 

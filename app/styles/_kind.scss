@@ -1,0 +1,28 @@
+.kind {
+  padding-top: 50px;
+  
+  &__slider {
+    min-height: 600px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: rgb(10, 93, 169);
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      right: 0;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      background: rgb(10, 93, 169);
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      left: 0;
+    }
+  }
+}
