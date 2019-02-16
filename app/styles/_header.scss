@@ -9,6 +9,11 @@
   right: 0;
   left: 0;
   z-index: 3;
+   top: 0;
+   transition: top 0.2s ease-in-out;
+   @media (max-width: 1367.98px) {
+    min-height: 120px;
+   }
   @media (max-width: 1199.98px) {
     padding: 30px 0;
   }
@@ -16,15 +21,11 @@
   &:before {
     position: absolute;
     content: '';
-    mask-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 65%);
+    mask-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 45%);
     background-color: rgb(19, 95, 167);
     width: 100%;
     min-height: 100%;
     opacity: 0.94;
-  }
-
-  .flexWrap {
-    align-items: center;
   }
 
   &__logo {
@@ -195,5 +196,5 @@
     }
   }
 
-  
+
 }
