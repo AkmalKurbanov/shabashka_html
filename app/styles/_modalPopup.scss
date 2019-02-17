@@ -1,0 +1,106 @@
+.parallaxSection__modalWindow {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  max-width: 500px;
+  width: 100%;
+  min-height: 250px;
+
+  @media (max-width: 1367.98px) {
+    min-height: 200px;
+    max-width: 450px;
+  }
+
+  @media (max-width: 1199.98px) {
+    min-height: 200px;
+    max-width: 400px;
+  }
+
+  .modal {
+    max-width: 500px;
+    width: 100%;
+    min-height: 250px;
+    background-color: #fff;
+    position: relative;
+    padding: 10px 15px;
+    -webkit-box-shadow: -4px 5px 28px 0px rgba(10, 93, 169, 1);
+    -moz-box-shadow: -4px 5px 28px 0px rgba(10, 93, 169, 1);
+    box-shadow: -4px 5px 28px 0px rgba(10, 93, 169, 1);
+
+    @media (max-width: 1367.98px) {
+      min-height: 200px;
+      max-width: 450px;
+    }
+
+    @media (max-width: 1199.98px) {
+      min-height: 200px;
+      max-width: 400px;
+    }
+
+    &__img {
+      max-width: 200px;
+      width: 100%;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      -webkit-box-shadow: -4px 5px 5px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: -4px 5px 5px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: -4px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+      @media (max-width: 1367.98px) {
+        max-width: 150px;
+      }
+
+      @media (max-width: 1199.98px) {
+        max-width: 125px;
+      }
+
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    &__question {
+      h4 {
+        font-family: 'Play';
+        font-size: 18px;
+        color: $mc;
+
+        @media (max-width: 1367.98px) {
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &__descCaption {
+      p {
+        font-family: 'OpenSans';
+
+        @media (max-width: 1367.98px) {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+
+        @media (max-width: 1199.98px) {
+          font-size: 13px;
+        }
+
+        &:first-child {
+          width: 100%;
+          max-width: 60%;
+
+          @media (max-width: 1367.98px) {
+            max-width: 70%;
+          }
+
+          @media (max-width: 1199.98px) {
+            max-width: 75%;
+          }
+        }
+      }
+    }
+  }
+}
