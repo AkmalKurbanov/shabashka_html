@@ -21,31 +21,8 @@
     align-items: center;
   }
 
-  &__itemWrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    @media (max-width: 1367.98px) {
-      padding: 0 50px;
-    }
-
-    @media (max-width: 1199.98px) {
-      padding: 0;
-    }
-  }
-
-  &__item {
-    .container {
-      max-width: 1300px;
-      width: 100%;
-
-      @media (max-width: 1367.98px) {
-        max-width: 1140px;
-      }
-    }
-  }
-
+ 
   &__itemSubItem {
     background-color: #fff;
     max-width: 235px;

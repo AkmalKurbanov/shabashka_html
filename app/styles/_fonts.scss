@@ -1,0 +1,5 @@
+@import "mixins/fontface";
+@include font-face("Play", "../fonts/play/play regular/PlayfairDisplay-Regular");
+@include font-face("Play", "../fonts/play/play bold/PlayfairDisplay-Bold", 700);
+@include font-face("OpenSans", "../fonts/open sans/open sans regular/OpenSans-Regular");
+@include font-face("OpenSans", "../fonts/open sans/open sans bold/OpenSans-Bold", 700);

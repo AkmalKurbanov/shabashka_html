@@ -1,17 +1,5 @@
 $(document).ready(function () {
 
-  // header
-  if ($(window).width() > 575) {
-    // $(window).scroll(function () {
-
-    //   if ($(this).scrollTop() > 10) {
-    //     $('.header').fadeOut();
-    //   } else {
-    //     $('.header').fadeIn();
-    //   }
-    // });
-  }
-  // header end
 
 
 
@@ -45,11 +33,9 @@ $(document).ready(function () {
     $(this).toggleClass('openClose');
     $('.mnu-js').toggleClass('mobileMnu-js');
     $('.hamburger__line').toggleClass('lineBg');
-    $('.smoothScroll').fadeToggle();
   });
 
   $('.mnu-js').click(function () {
-    $(this).removeClass('mobileMnu-js');
     $('.hamburger').removeClass('openClose');
     $('.hamburger__line').removeClass('lineBg');
   });
@@ -84,7 +70,7 @@ $(document).ready(function () {
     // Default
     jQuery.scrollSpeed(70, 800);
 
- 
+
   });
   // smooth speed  end
 

@@ -5,18 +5,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 20s;
-    background-size: 170%;
     -webkit-animation: zoomin 20s linear;
     animation: zoomin 20s infinite linear;
     overflow: hidden;
 
     @media (max-width: 1199.98px) {
-      min-height: 75vh;
+      min-height: 70vh;
     }
 
     @media (max-width: 991.98px) {
       animation: none;
-      background-position: left bottom;
+      background-position: bottomleft;
     }
 
     .captionWrap {
@@ -25,7 +24,7 @@
       align-items: center;
 
       @media (max-width: 1199.98px) {
-        min-height: 75vh;
+        min-height: 70vh;
       }
 
       @media (max-width: 767.98px) {
@@ -100,56 +99,6 @@
       }
     }
 
-    // tmooth scroll 
-    .smoothScroll {
-      position: absolute;
-      bottom: 40px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 9;
-      max-width: 19px;
-      width: 100%;
-      min-height: 30px;
-      border: 2px solid #fff;
-      border-radius: 10px;
-      animation: move 1s infinite alternate;
-
-      &:before {
-        position: absolute;
-        content: '';
-        width: 2px;
-        height: 5px;
-        background-color: #fff;
-        animation: thoothScroll 1.9s infinite;
-        left: 50%;
-        transform: translateX(-50%);
-        transform: rotate(360deg);
-      }
-    }
-
-    @keyframes thoothScroll {
-      0% {
-        top: 10%;
-        opacity: 1;
-      }
-
-      100% {
-        top: 80%;
-        opacity: 0;
-      }
-    }
-
-    @keyframes move {
-      0% {
-        transform: translateY(0);
-      }
-
-      100% {
-        transform: translateY(-10px);
-      }
-    }
-
-    // tmooth scroll end
 
     @keyframes zoomin {
       0% {
@@ -157,15 +106,15 @@
       }
 
       25% {
-        background-size: 105%;
+        background-size: 103%;
       }
 
       50% {
-        background-size: 110%;
+        background-size: 106%;
       }
 
       75% {
-        background-size: 105%;
+        background-size: 103%;
       }
 
       100% {

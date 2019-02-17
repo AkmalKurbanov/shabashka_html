@@ -2,7 +2,6 @@ html,
 body {
   height: 100%;
   font-family: "OpenSans";
-  overflow: hidden;
 }
 
 // footerFlex down
@@ -62,6 +61,7 @@ body {
   text-align: center;
   z-index: 1;
   position: relative;
+
   h2 {
     font-size: 40px;
     color: #ffffff;
@@ -69,3 +69,169 @@ body {
     font-weight: 400;
   }
 }
+
+// feedBack
+.feedBackWrap {
+  display: none;
+  background-color: transparent !important;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  display: none;
+
+  @media (max-width: 440.98px) {
+    padding: 40px 10px 0;
+  }
+
+  .feedBack {
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    min-height: 400px;
+    padding: 30px 15px;
+
+    @media (max-width: 440.98px) {
+      padding: 15px 15px;
+    }
+
+    &__logo {
+      max-width: 100px;
+      width: 100%;
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    ::-webkit-input-placeholder {
+      color: #ccc;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    ::-moz-placeholder {
+      color: #ccc;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+
+    :-moz-placeholder {
+      color: #ccc;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+
+    :-ms-input-placeholder {
+      color: #ccc;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    &__input,
+    &__textarea {
+      width: 100%;
+      max-width: 100%;
+      border: none;
+      outline: none;
+      border: 1px solid $mc;
+      padding: 0 15px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      color: $mc;
+
+      @media (max-width: 440.98px) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__textarea {
+      min-height: 70px;
+      resize: none;
+    }
+
+    &__input {
+      min-height: 40px;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      margin: 0 auto;
+      display: block;
+      max-width: 150px;
+      width: 100%;
+      min-height: 40px;
+      background-color: $mc;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: 1px solid $mc;
+      transform: scale(1);
+      transition: all .3s ease-in-out;
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .5);
+
+      &:hover {
+        background-color: transparent;
+        color: $mc;
+        animation: submitButton 1s;
+        transform: scale(1.01) translateY(-5px);
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .5);
+      }
+    }
+
+    @keyframes submitButton {
+      0% {
+        transform: rotate(0deg) translate(0);
+      }
+
+      20% {
+        transform: rotate(10deg) translate(5px, -2px);
+      }
+
+      40% {
+        transform: rotate(-10deg) translate(-5px, 2px);
+      }
+
+      60% {
+        transform: rotate(11deg) translate(4px, -1px);
+      }
+
+      80% {
+        transform: rotate(0deg) translate(0);
+      }
+    }
+  }
+
+  .fancybox-button {
+    padding: 3px;
+    border: 1px solid $mc;
+    max-width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    transition: all .3s;
+    top: 5px;
+
+    @media (max-width: 440.98px) {
+      top: 0px;
+    }
+
+    &:hover {
+      border: 1px solid red;
+
+      path {
+        fill: red;
+      }
+    }
+
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+// feedBack end

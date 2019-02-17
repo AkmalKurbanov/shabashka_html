@@ -9,11 +9,12 @@
   right: 0;
   left: 0;
   z-index: 3;
-   top: 0;
-   transition: top 0.2s ease-in-out;
-   @media (max-width: 1367.98px) {
+  transition: top 0.2s ease-in-out;
+
+  @media (max-width: 1367.98px) {
     min-height: 120px;
-   }
+  }
+
   @media (max-width: 1199.98px) {
     padding: 30px 0;
   }
@@ -27,6 +28,150 @@
     min-height: 100%;
     opacity: 0.94;
   }
+
+  &__search {
+    position: absolute;
+    top: -50px;
+    left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1367.98px) {
+      top: -40px;
+    }
+
+    @media (max-width: 1199.98px) {
+      top: -50px;
+      left: 16px;
+    }
+
+    @media (max-width: 991.98px) {
+      left: 140px;
+      top: -128%;
+    }
+
+    @media (max-width: 767.98px) {
+      left: 55%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+
+    @media (max-width: 575.98px) {
+      right: 50%;
+      transform: translateX(50%);
+      top: 60%;
+      z-index: 999;
+      left: auto;
+    }
+  }
+
+  &__searchInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    padding-bottom: 5px;
+    outline: none;
+    color: #ccc;
+    font-size: 14px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #ccc;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  ::-moz-placeholder {
+    color: #ccc;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+
+  :-moz-placeholder {
+    color: #ccc;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+
+  :-ms-input-placeholder {
+    color: #ccc;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  button {
+    outline: none;
+  }
+
+  &__searchSubmit {
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+    i {
+      color: #ffffff;
+    }
+  }
+
+  &__social {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    display: inline-block !important;
+    top: -50px;
+    right: -152px;
+
+    @media (max-width: 1367.98px) {
+      top: -40px;
+    }
+
+    @media (max-width: 1199.98px) {
+      top: -50px;
+      right: -130px;
+    }
+
+    @media (max-width: 991.98px) {
+      right: 120px;
+      transform: translateX(-50%);
+      top: -128%;
+    }
+
+    @media (max-width: 575.98px) {
+      right: 50%;
+      transform: translateX(50%);
+      top: 70%;
+      z-index: 9;
+    }
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 20px;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      a {
+        color: #ffffff;
+        transition: all .3s;
+        display: block;
+
+        &:hover {
+          transform: rotate(360deg) scale(1.4);
+        }
+      }
+    }
+  }
+
 
   &__logo {
     max-width: 100px;
@@ -50,7 +195,7 @@
       width: 100%;
       max-width: 100%;
       min-height: 100vh;
-      background-color: rgba(19, 95, 167, .7);
+      background-color: rgba(19, 95, 167, .9);
       margin: 0;
       transition: all .3s;
       top: 0;
@@ -80,6 +225,34 @@
     left: 0;
   }
 
+  &__userPanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    select {
+      background: none;
+      border: none;
+      color: #ffffff;
+      outline: none;
+      max-width: 50px;
+      width: 100%;
+      cursor: pointer;
+
+      option {
+        background-color: $mc !important;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__feedBack {
+    i {
+      font-size: 25px;
+      color: #fff;
+    }
+  }
 
   &__item {
     list-style-type: none;
@@ -135,66 +308,4 @@
       }
     }
   }
-
-  &__phone {
-    position: relative;
-
-    &:before {
-      position: absolute;
-      content: '';
-      font-family: 'Font Awesome 5 Pro';
-      top: 50%;
-      transform: translateY(-50%) rotate(120deg);
-      left: 30px;
-      color: #ffffff;
-
-      @media (max-width: 1199.98px) {
-        display: none;
-      }
-
-      @media (max-width: 991.98px) {
-        display: block;
-        left: 70px;
-      }
-
-      @media (max-width: 767.98px) {
-        display: block;
-        left: 15px;
-      }
-
-      @media (max-width: 575.98px) {
-        left: auto;
-        right: 105px;
-      }
-    }
-
-    ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-
-
-      li {
-        list-style-type: none;
-
-        a {
-          color: #ffffff;
-          transition: all .3s;
-
-          @media (max-width: 575.98px) {
-            font-size: 15px;
-          }
-
-          &:hover {
-            text-decoration: none;
-            color: #cccccc;
-          }
-        }
-      }
-    }
-  }
-
-
 }

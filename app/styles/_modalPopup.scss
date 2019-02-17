@@ -5,7 +5,7 @@
   max-width: 500px;
   width: 100%;
   min-height: 250px;
-
+    
   @media (max-width: 1367.98px) {
     min-height: 200px;
     max-width: 450px;
@@ -14,6 +14,10 @@
   @media (max-width: 1199.98px) {
     min-height: 200px;
     max-width: 400px;
+  }
+
+  @media (max-width: 991.98px) {
+    display: none;
   }
 
   .modal {
