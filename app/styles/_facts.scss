@@ -1,0 +1,32 @@
+.facts {
+  background-color: $mc;
+  padding: 40px 0;
+  position: relative;
+
+  .swiper-button-nexta,
+  .swiper-button-preva {
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    outline: none;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .swiper-button-nexta {
+    right: 0;
+  }
+
+  .swiper-button-preva {
+    left: 0;
+  }
+
+  &__slider {
+    min-height: 500px;
+    position: relative;
+  }
+  &__item {
+    min-height: 300px;
+  }
+}

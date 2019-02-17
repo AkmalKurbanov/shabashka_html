@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 
 
-  // mainSlider
+  // slider
 
   var swiper = new Swiper('.kind-js', {
     slidesPerView: 3,
@@ -11,6 +11,11 @@ $(document).ready(function () {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
       clickable: true,
     },
     breakpoints: {
@@ -25,7 +30,36 @@ $(document).ready(function () {
     }
   });
 
-  // mainSlider end
+
+
+  var swiper = new Swiper('.facts-js', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-nexta',
+      prevEl: '.swiper-button-preva',
+      clickable: true,
+    },
+    breakpoints: {
+      1199: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+    }
+   
+  });
+
+
+  // slider end
 
 
   // scroll button
