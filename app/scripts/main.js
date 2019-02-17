@@ -6,12 +6,23 @@ $(document).ready(function () {
   // mainSlider
 
   var swiper = new Swiper('.kind-js', {
-    slidesPerView: 1,
-    spaceBetween: 0,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
+    breakpoints: {
+      1199: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+    }
   });
 
   // mainSlider end

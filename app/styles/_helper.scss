@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   font-family: "OpenSans";
+  // overflow: hidden;
 }
 
 // footerFlex down
@@ -129,7 +130,7 @@ body {
       color: #ccc;
       font-weight: 400;
       font-size: 14px;
-    }
+      }
 
     &__input,
     &__textarea {
@@ -142,6 +143,7 @@ body {
       margin-bottom: 20px;
       font-size: 15px;
       color: $mc;
+      
 
       @media (max-width: 440.98px) {
         margin-bottom: 15px;
