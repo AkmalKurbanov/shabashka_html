@@ -69,6 +69,12 @@ body {
     margin: 0;
     font-weight: 400;
   }
+
+  &--dark {
+    h2 {
+      color: #000000;
+    }
+  }
 }
 
 // feedBack
@@ -130,7 +136,7 @@ body {
       color: #ccc;
       font-weight: 400;
       font-size: 14px;
-      }
+    }
 
     &__input,
     &__textarea {
@@ -143,7 +149,7 @@ body {
       margin-bottom: 20px;
       font-size: 15px;
       color: $mc;
-      
+
 
       @media (max-width: 440.98px) {
         margin-bottom: 15px;
