@@ -14,6 +14,10 @@ body {
 
 .contentWrap {
   flex: 1 0 auto;
+
+  &--isidePage {
+    background-color: #f8f8f8;
+  }
 }
 
 // footerFlex down end
@@ -243,3 +247,31 @@ body {
 }
 
 // feedBack end
+
+
+// pagination
+.pagination {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  &__link {
+    border: 1px solid $mc;
+    padding: 3px 15px;
+    transition: all .3s;
+    color: #000000;
+
+    &:hover {
+      background-color: $mc;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    &--current {
+      background-color: $mc;
+      color: #ffffff;
+    }
+  }
+}
+
+// pagination end

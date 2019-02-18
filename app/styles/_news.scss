@@ -138,6 +138,7 @@
     @media (max-width: 991.98px) {
       font-size: 18px;
     }
+
     @media (max-width: 767.98px) {
       font-size: 16px;
       font-weight: 700;
@@ -146,10 +147,28 @@
 
   &--detail {
     padding-top: 200px;
-
+    padding-bottom: 0;
     @media (max-width: 991.98px) {
       padding-top: 250px;
     }
+    @media (max-width: 575.98px) {
+      padding-top: 170px;
+    }
   }
 
+  &__data {
+    padding-top: 10px;
+    text-align: right;
+    span {
+      color: #c6c6c6;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: #000;
+      font-weight: 400;
+    }
+  }
 }
