@@ -1,3 +1,76 @@
 .tours {
-  
+  margin-top: 200px;
+
+  &__rightBar {}
+
+  &__searchCaption {
+    margin: 0;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+
+  &__searchWrap {
+    padding-top: 10px;
+
+    label {
+      display: block;
+      margin: 0;
+      cursor: pointer;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '';
+        background-color: #ffffff;
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        background-color: red;
+        width: 10px;
+        height: 10px;
+      }
+
+      input {
+        margin-right: 10px;
+      }
+
+      &:checked+&:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__search {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      font-family: Font Awesome\ 5 Pro;
+      top: 50%;
+      z-index: 9;
+      left: 15px;
+      transform: translateY(-50%);
+      color: #cccccc;
+    }
+
+    input {
+      max-width: 100%;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      min-height: 50px;
+      outline: none;
+      font-size: 14px;
+      position: relative;
+      padding-left: 40px;
+    }
+  }
 }
