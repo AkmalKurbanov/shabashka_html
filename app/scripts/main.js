@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 
   // preloader
-  $(window).on("load", function () {
+  $(window).on('load', function () {
     $('.preloader').fadeOut('slow', function () {
       $(this).remove();
     });
@@ -121,14 +121,9 @@ $(document).ready(function () {
 
 
   // smooth speed 
-  $(function () {
 
-    // Default
-    jQuery.scrollSpeed(70, 800);
-
-
-  });
   // smooth speed  end
+
 
 
 });

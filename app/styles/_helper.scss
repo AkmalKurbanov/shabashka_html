@@ -5,8 +5,28 @@ body {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
+
+//  scroll
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgba(19, 95, 167, 0.2);
+  border-radius: 10px;
+}
+
+//  scroll end
 
 // footerFlex down
 .mainWrap {
@@ -367,3 +387,56 @@ body {
 }
 
 // preloader end
+
+
+
+// breadCrumbs
+.breadCrumbs {
+  margin-bottom: 15px;
+  display: inline-block;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 15px;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        right: 3px;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background-color: $mc;
+      }
+
+      &:last-child {
+        cursor: no-drop;
+        color: #cccccc;
+
+        &:after {
+          display: none;
+        }
+      }
+
+      a {
+        color: #000000;
+        transition: all .3s;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: none;
+          color: $mc;
+        }
+      }
+    }
+  }
+}
+
+// breadCrumbs end
