@@ -85,12 +85,12 @@
             <div class="col-lg-8 order-lg-1">
               <div class="header__nav mnu-js">
                 <ul>
-                  <li class="header__item header__item--active"><a data-scroll class="header__link" href="#">Главная</a></li>
-                  <li class="header__item"><a data-scroll class="header__link" href="#">О нас</a></li>
-                  <li class="header__item"><a data-scroll class="header__link" href="#">Туры</a></li>
-                  <li class="header__item"><a data-scroll class="header__link" href="#">Галерея</a></li>
-                  <li class="header__item"><a data-scroll class="header__link" href="#">Новости</a></li>
-                  <li class="header__item"><a data-scroll class="header__link" href="#">Контакты</a>
+                  <li class="header__item header__item--active"><a class="header__link" href="#">Главная</a></li>
+                  <li class="header__item"><a class="header__link" href="#">О нас</a></li>
+                  <li class="header__item"><a class="header__link" href="#">Туры</a></li>
+                  <li class="header__item"><a class="header__link" href="#">Галерея</a></li>
+                  <li class="header__item"><a class="header__link" href="#">Новости</a></li>
+                  <li class="header__item"><a class="header__link" href="#">Контакты</a>
                     <ul class="header__social">
                       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                       <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -410,8 +410,49 @@
     <!-- contentWrap -->
 
     <!-- footer -->
-    <div class="footer">
+    <div class="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="contacts__item">
+              <h2 class="contacts__caption">НАШ АДРЕС</h2>
+              <div class="contacts__list">
+                <ul>
+                  <li><i class="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit.</li>
+                  <li><i class="fal fa-envelope"></i><a href="mailto:Lorem@ipsum.com">Lorem@ipsum.com</a></li>
+                  <li><i class="fal fa-mobile"></i><a href="tel:996 999 999 999">+996 999 999 999</a></li>
+                </ul>
+                <h2 class="contacts__caption">МЫ В СОЦ. СЕТЯХ</h2>
+                <ul class="contacts__social">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-6">
+            <div class="contacts__item">
+              <h2 class="contacts__caption">НАПИШИТЕ НАМ</h2>
+              <form class="contacts__form">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input type="text" class="contacts__input" placeholder="Ваше Имя">
+                    <input type="text" class="contacts__input" placeholder="Номер вашего телефона">
+                    <input type="text" class="contacts__input" placeholder="Ваш email">
+                  </div>
+                  <div class="col-lg-6">
+                    <textarea class="contacts__textarea" placeholder="Сообщение"></textarea>
+                    <button type="submit">Отправить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
 
+        </div>
+      </div>
     </div>
     <!-- footer end -->
 

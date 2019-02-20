@@ -81,7 +81,7 @@ $(document).ready(function () {
       scrollTop: $section.offset().top
     }, 700);
   }
-  $('[data-scroll]').on('click', scrollToSection);
+  $('[]').on('click', scrollToSection);
   // scroll button end
 
   // hamburger
