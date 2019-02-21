@@ -72,6 +72,11 @@ $(document).ready(function () {
 
   // slider end
 
+  // trigger filter
+  $('.trigger-js').on('click', function () {
+    $('.tours__checkWraphidden').slideToggle();
+  });
+  // trigger filterend
 
   // scroll button
   function scrollToSection(event) {
@@ -98,7 +103,6 @@ $(document).ready(function () {
   // hamburger end
 
 
-
   // animation
   if ($(window).width() > 575) {
     var wow = new WOW({
@@ -117,12 +121,6 @@ $(document).ready(function () {
   // animation end
 
 
-
-
-
-  // smooth speed 
-
-  // smooth speed  end
 
 
 
