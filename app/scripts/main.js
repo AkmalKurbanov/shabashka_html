@@ -1,5 +1,20 @@
 $(document).ready(function () {
+ // animation
+  if ($(window).width() > 575) {
+    var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: false,
+      live: true,
+      callback: function (box) {
 
+      },
+      scrollContainer: null
+    });
+    wow.init();
+  }
+  // animation end
   // hamburger
   $('.hamburger').click(function () {
     $(this).toggleClass('openClose');
@@ -103,22 +118,7 @@ $(document).ready(function () {
 
 
 
-  // animation
-  if ($(window).width() > 575) {
-    var wow = new WOW({
-      boxClass: 'wow',
-      animateClass: 'animated',
-      offset: 0,
-      mobile: false,
-      live: true,
-      callback: function (box) {
-
-      },
-      scrollContainer: null
-    });
-    wow.init();
-  }
-  // animation end
+ 
 
 
 
