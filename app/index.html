@@ -37,7 +37,7 @@
 <body>
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <![endif]-->
 
   <!-- preloader -->
   <div class="preloader">
@@ -84,20 +84,25 @@
             </div>
             <div class="col-lg-8 order-lg-1">
               <div class="header__nav mnu-js">
-                <ul>
+                <ul class="header__firstLevel">
                   <li class="header__item header__item--active"><a class="header__link" href="#">Главная</a></li>
                   <li class="header__item"><a class="header__link" href="#">О нас</a></li>
-                  <li class="header__item"><a class="header__link" href="#">Туры</a></li>
-                  <li class="header__item"><a class="header__link" href="#">Галерея</a></li>
-                  <li class="header__item"><a class="header__link" href="#">Новости</a></li>
-                  <li class="header__item"><a class="header__link" href="#">Контакты</a>
-                    <ul class="header__social">
-                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  <li class="header__item"><a class="header__link" href="#">Туры</a> <i class="fal fa-angle-right triggerSubmenu-js"></i>
+                    <ul class="header__dropDownMenu subMnu-js">
+                      <li><a href="#">Туры 1</a></li>
+                      <li><a href="#">Туры 2</a></li>
+                      <li><a href="#">Туры 3</a></li>
                     </ul>
                   </li>
+                  <li class="header__item"><a class="header__link" href="#">Галерея</a></li>
+                  <li class="header__item"><a class="header__link" href="#">Новости</a></li>
+                  <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+                  <ul class="header__social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
                 </ul>
                 <form class="header__search">
                   <input placeholder="Поиск ..." class="header__searchInput" type="text">
@@ -124,10 +129,10 @@
             </div>
             <div class="modal__descCaption">
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit sint debitis ullam dolorum
-                ipsa.</p>
+              ipsa.</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum in itaque soluta pariatur repellendus
                 accusantium rerum. Velit, dolorum saepe. Impedit soluta praesentium iusto fugiat quam ab, laudantium
-                ipsum voluptatibus ipsam.</p>
+              ipsum voluptatibus ipsam.</p>
             </div>
           </div>
         </div>
@@ -149,28 +154,108 @@
 
       <!-- intro  -->
       <div class="intro">
-        <div class="container">
+        <div class="container">          
           <div class="captionWrap">
             <h2 class="captionSecond wow fadeInLeft" data-wow-duration="1s">Lorem, ipsum dolor.</h2>
             <h3 class="subCaption wow fadeInLeft" data-wow-duration="1.4s">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
-          <div class="intro__desc wow fadeInLeft" data-wow-duration="1.7s">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsa perspiciatis enim sed, in
-              sapiente voluptas rem, harum cupiditate facere consequatur consectetur magni fugiat reprehenderit
-              suscipit illum velit tempora. Officiis sit dolores reiciendis dicta tempore debitis sapiente quidem,
-              neque necessitatibus iusto, quasi vero alias maiores quos cum perferendis quae voluptatibus dignissimos.
-              Voluptatum at nam quidem facilis deleniti culpa quae soluta quia reprehenderit minima molestiae ab
-              veniam, laudantium ex iure esse quasi dolorum perferendis? Alias, illum! Optio voluptatibus, corrupti
-              dolorum consequatur architecto nostrum, similique aspernatur blanditiis iure obcaecati recusandae.
-              Maiores qui consequuntur excepturi ullam exercitationem dicta accusamus repudiandae eveniet perferendis,
-              modi, dolorum alias deserunt eum facere sunt dolore unde recusandae! Expedita atque doloremque corporis
-              obcaecati doloribus! Perspiciatis modi facere neque alias ullam tenetur velit quod. Quibusdam, tempore
-              qui. Quam dolor ullam commodi, nesciunt quis illo unde ad recusandae a doloribus repudiandae nisi rerum.
-              Nobis in iure voluptatibus voluptates quidem quod corrupti dolores ab provident molestiae, mollitia
-              consequuntur saepe quasi beatae explicabo ea culpa. Enim ex voluptatibus expedita vitae. Voluptatem
-              incidunt omnis corporis molestias magnam deserunt excepturi minus expedita esse, repellat assumenda quae,
-              quo obcaecati numquam quam totam suscipit reiciendis. Maxime at iure neque quas eum ratione incidunt odio
-              omnis quasi ad? </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="intro__desc wow fadeInLeft" data-wow-duration="1.7s">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsa perspiciatis enim sed, in
+                  sapiente voluptas rem, harum cupiditate facere consequatur consectetur magni fugiat reprehenderit
+                  suscipit illum velit tempora. Officiis sit dolores reiciendis dicta tempore debitis sapiente quidem,
+                  neque necessitatibus iusto, quasi vero alias maiores quos cum perferendis quae voluptatibus dignissimos.
+                  Voluptatum at nam quidem facilis deleniti culpa quae soluta quia reprehenderit minima molestiae ab
+                  veniam, laudantium ex iure esse quasi dolorum perferendis? Alias, illum! Optio voluptatibus, corrupti
+                  dolorum consequatur architecto nostrum, similique aspernatur blanditiis iure obcaecati recusandae.
+                  Maiores qui consequuntur excepturi ullam exercitationem dicta accusamus repudiandae eveniet perferendis,
+                  modi, dolorum alias deserunt eum facere sunt dolore unde recusandae! Expedita atque doloremque corporis
+                  obcaecati doloribus! Perspiciatis modi facere neque alias ullam tenetur velit quod. Quibusdam, tempore
+                  qui. Quam dolor ullam commodi, nesciunt quis illo unde ad recusandae a doloribus repudiandae nisi rerum.
+                  Nobis in iure voluptatibus voluptates quidem quod corrupti dolores ab provident molestiae, mollitia
+                  consequuntur saepe quasi beatae explicabo ea culpa. Enim ex voluptatibus expedita vitae. Voluptatem
+                  incidunt omnis corporis molestias magnam deserunt excepturi minus expedita esse, repellat assumenda quae,
+                  quo obcaecati numquam quam totam suscipit reiciendis. Maxime at iure neque quas eum ratione incidunt odio
+                omnis quasi ad? </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="intro__about wow fadeInRight">
+
+                <div class="intro__item">
+                  <div class="intro__itemDesc">
+                    <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+
+                    </p>
+                  </div>
+                  <div class="intro__itemAvatar">
+                    <div class="intro__itemImg">
+                      <img src="images/male.png" alt="">
+                    </div>
+                    <div class="intro__itemName">
+                      <p>Ебало Ебало</p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+
+
+
+                <div class="intro__item">
+                  <div class="intro__itemAvatar">
+                    <div class="intro__itemImg">
+                      <img src="images/female.png" alt="">
+                    </div>
+                    <div class="intro__itemName">
+                      <p>Ебало Ебало</p>
+                    </div>
+                  </div>
+                  <div class="intro__itemDesc">
+                    <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+
+                    </p>
+                  </div>
+                </div>
+
+
+                <div class="intro__item">
+                  <div class="intro__itemDesc">
+                    <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+
+                    </p>
+                  </div>
+                  <div class="intro__itemAvatar">
+                    <div class="intro__itemImg">
+                      <img src="images/male.png" alt="">
+                    </div>
+                    <div class="intro__itemName">
+                      <p>Ебало Ебало</p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+
+                <div class="intro__item">
+                  <div class="intro__itemAvatar">
+                    <div class="intro__itemImg">
+                      <img src="images/female.png" alt="">
+                    </div>
+                    <div class="intro__itemName">
+                      <p>Ебало Ебало</p>
+                    </div>
+                  </div>
+                  <div class="intro__itemDesc">
+                    <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+
+                    </p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -289,7 +374,7 @@
                   <h2 class="facts__caption">lorem</h2>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam iste ea, assumenda
                     accusantium provident. Quibusdam molestias sit sunt ab reiciendis assumenda dolor, minus architecto
-                    et quis rem, error magni.</p>
+                  et quis rem, error magni.</p>
                 </div>
               </div>
               <div class="swiper-slide facts__item wow fadeInUp" data-wow-duration="1.4s">
@@ -297,7 +382,7 @@
                   <h2 class="facts__caption">lorem</h2>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam iste ea, assumenda
                     accusantium provident. Quibusdam molestias sit sunt ab reiciendis assumenda dolor, minus architecto
-                    et quis rem, error magni.</p>
+                  et quis rem, error magni.</p>
                 </div>
               </div>
               <div class="swiper-slide facts__item wow fadeInDown" data-wow-duration="1.5s">
@@ -305,7 +390,7 @@
                   <h2 class="facts__caption">lorem</h2>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam iste ea, assumenda
                     accusantium provident. Quibusdam molestias sit sunt ab reiciendis assumenda dolor, minus architecto
-                    et quis rem, error magni.</p>
+                  et quis rem, error magni.</p>
                 </div>
               </div>
               <div class="swiper-slide facts__item wow fadeInUp" data-wow-duration="1.6s">
@@ -313,7 +398,7 @@
                   <h2 class="facts__caption">lorem</h2>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam iste ea, assumenda
                     accusantium provident. Quibusdam molestias sit sunt ab reiciendis assumenda dolor, minus architecto
-                    et quis rem, error magni.</p>
+                  et quis rem, error magni.</p>
                 </div>
               </div>
             </div>
@@ -341,7 +426,7 @@
                   <div class="news__desc">
                     <a href="#" class="news__caption">Lorem.</a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas rem a dicta expedita, labore
-                      error fuga distinctio deleniti esse...</p>
+                    error fuga distinctio deleniti esse...</p>
                     <div class="news__bottomWrap">
                       <p class="news__date">19.02.2019</p>
                       <a class="news__more" href="#">Подробнее...</a>
@@ -358,7 +443,7 @@
                     <a href="#" class="news__caption">Lorem.</a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas rem a dicta expedita, labore
                       error fuga
-                      distinctio deleniti esse...</p>
+                    distinctio deleniti esse...</p>
                     <div class="news__bottomWrap">
                       <p class="news__date">19.02.2019</p>
                       <a class="news__more" href="#">Подробнее...</a>
@@ -375,7 +460,7 @@
                     <a href="#" class="news__caption">Lorem.</a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas rem a dicta expedita, labore
                       error fuga
-                      distinctio deleniti esse...</p>
+                    distinctio deleniti esse...</p>
                     <div class="news__bottomWrap">
                       <p class="news__date">19.02.2019</p>
                       <a class="news__more" href="#">Подробнее...</a>
@@ -392,7 +477,7 @@
                     <a href="#" class="news__caption">Lorem.</a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas rem a dicta expedita, labore
                       error fuga
-                      distinctio deleniti esse...</p>
+                    distinctio deleniti esse...</p>
                     <div class="news__bottomWrap">
                       <p class="news__date">19.02.2019</p>
                       <a class="news__more" href="#">Подробнее...</a>

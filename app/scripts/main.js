@@ -1,19 +1,27 @@
 $(document).ready(function () {
- // animation
-  if ($(window).width() > 575) {
-    var wow = new WOW({
-      boxClass: 'wow',
-      animateClass: 'animated',
-      offset: 0,
-      mobile: false,
-      live: true,
-      callback: function (box) {
 
-      },
-      scrollContainer: null
-    });
-    wow.init();
-  }
+// subMenu
+$('.triggerSubmenu-js').on('click', function(){
+  $(this).toggleClass('activeTriggerSubMenu-js');
+  $('.subMnu-js').slideToggle();
+});
+// subMenu end
+
+ // animation
+ if ($(window).width() > 575) {
+  var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: false,
+    live: true,
+    callback: function (box) {
+
+    },
+    scrollContainer: null
+  });
+  wow.init();
+}
   // animation end
   // hamburger
   $('.hamburger').click(function () {
@@ -118,7 +126,7 @@ $(document).ready(function () {
 
 
 
- 
+
 
 
 
