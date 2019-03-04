@@ -104,6 +104,22 @@ $('.triggerSubmenu-js').on('click', function(){
   });
 
 
+var swiper = new Swiper('.news-js', {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-nextb',
+      prevEl: '.swiper-button-prevb',
+      clickable: true,
+    },
+  
+  });
+
+
   // slider end
 
   // trigger filter
