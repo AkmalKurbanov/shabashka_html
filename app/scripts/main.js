@@ -104,21 +104,20 @@ $('.triggerSubmenu-js').on('click', function(){
   });
 
 
-var swiper = new Swiper('.news-js', {
+  var swiper = new Swiper('.news-js', {
     slidesPerView: 1,
+    slidesPerGroup: 1,
     loop: true,
+    loopFillGroupWithBlank: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-nextb',
-      prevEl: '.swiper-button-prevb',
-      clickable: true,
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-  
   });
-
 
   // slider end
 

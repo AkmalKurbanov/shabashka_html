@@ -186,4 +186,38 @@
       font-weight: 400;
     }
   }
+  &__detailSlider {
+    .slider {
+      &__item {
+        flex-direction: column;
+        padding-bottom: 50px;
+        img {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      &__itemImg {
+        position: relative;
+      }
+      &__itemImgInfo {
+        position: absolute;
+        background-color: rgba(0,0,0,0.4);
+        bottom: 0;
+        right: 0;
+        padding: 5px;
+        width: 100%;
+        max-width: 300px;
+        p{
+          margin: 0;
+          color: #fff;
+          @media (max-width: 575.98px) {
+            font-size: 13px;
+          }
+        }
+      }
+      &__itemdesc {
+        margin-top: 30px;
+      }    
+    }
+  }
 }
