@@ -1,27 +1,44 @@
 $(document).ready(function () {
 
-// subMenu
-$('.triggerSubmenu-js').on('click', function(){
-  $(this).toggleClass('activeTriggerSubMenu-js');
-  $('.subMnu-js').slideToggle();
-});
-// subMenu end
 
- // animation
- if ($(window).width() > 575) {
-  var wow = new WOW({
-    boxClass: 'wow',
-    animateClass: 'animated',
-    offset: 0,
-    mobile: false,
-    live: true,
-    callback: function (box) {
+  // scroll button
+  function scrollToSection(event) {
+    event.preventDefault();
+    var $section = $($(this).attr('href'));
+    $('html, body').animate({
+      scrollTop: $section.offset().top
+    }, 700);
+  }
+  $('[data-scroll]').on('click', scrollToSection);
+  // scroll button end
 
-    },
-    scrollContainer: null
+  // subMenu
+  $('.triggerSubmenu-js').on('click', function () {
+    $(this).toggleClass('activeTriggerSubMenu-js');
+    $('.subMnu-js').slideToggle();
   });
-  wow.init();
-}
+  // subMenu end
+
+  
+
+
+
+
+  // animation
+  if ($(window).width() > 575) {
+    var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: false,
+      live: true,
+      callback: function (box) {
+
+      },
+      scrollContainer: null
+    });
+    wow.init();
+  }
   // animation end
   // hamburger
   $('.hamburger').click(function () {
@@ -126,18 +143,6 @@ $('.triggerSubmenu-js').on('click', function(){
     $('.tours__checkWraphidden').slideToggle();
   });
   // trigger filterend
-
-  // scroll button
-  function scrollToSection(event) {
-    event.preventDefault();
-    var $section = $($(this).attr('href'));
-    $('html, body').animate({
-      scrollTop: $section.offset().top
-    }, 700);
-  }
-  $('[]').on('click', scrollToSection);
-  // scroll button end
-
 
 
 
