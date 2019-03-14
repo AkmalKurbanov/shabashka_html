@@ -84,20 +84,25 @@
             </div>
             <div class="col-lg-8 order-lg-1">
               <div class="header__nav mnu-js">
-                <ul>
-                  <li class="header__item header__item--active"><a  class="header__link" href="#">Главная</a></li>
-                  <li class="header__item"><a  class="header__link" href="#">О нас</a></li>
-                  <li class="header__item"><a  class="header__link" href="#">Туры</a></li>
-                  <li class="header__item"><a  class="header__link" href="#">Галерея</a></li>
-                  <li class="header__item"><a  class="header__link" href="#">Новости</a></li>
-                  <li class="header__item"><a  class="header__link" href="#">Контакты</a>
-                    <ul class="header__social">
-                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <ul class="header__firstLevel">
+                  <li class="header__item header__item--active"><a class="header__link" href="#">Главная</a></li>
+                  <li class="header__item"><a class="header__link" href="#about" data-scroll>О нас</a></li>
+                  <li class="header__item"><a class="header__link" href="#">Туры</a> <i class="fal fa-angle-right triggerSubmenu-js"></i>
+                    <ul class="header__dropDownMenu subMnu-js">
+                      <li><a href="#">Туры 1</a></li>
+                      <li><a href="#">Туры 2</a></li>
+                      <li><a href="#">Туры 3</a></li>
                     </ul>
                   </li>
+                  <li class="header__item"><a class="header__link" href="#">Галерея</a></li>
+                  <li class="header__item"><a class="header__link" href="#">Новости</a></li>
+                  <li class="header__item"><a class="header__link" href="#contacts" data-scroll>Контакты</a></li>
+                  <ul class="header__social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
                 </ul>
                 <form class="header__search">
                   <input placeholder="Поиск ..." class="header__searchInput" type="text">
@@ -131,22 +136,22 @@
             <p>18.02.2019</p>
           </div>
           <h2 class="news__detailCaption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quo nihil unde
-          quia!</h2>
+            quia!</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, enim, voluptate sed hic quae quos
             consectetur, dolorem porro quia odit aperiam libero culpa repudiandae vero. Ea delectus sint nostrum natus
-          iusto repudiandae officiis illo? Voluptatibus doloremque delectus dolorem distinctio! Blanditiis!</p>
+            iusto repudiandae officiis illo? Voluptatibus doloremque delectus dolorem distinctio! Blanditiis!</p>
           <p>Velit accusamus a soluta, rerum provident expedita beatae deserunt illum at nisi quis aut similique? Optio
             magni maiores repellendus nostrum unde. Voluptate at sequi error harum id omnis animi iure esse obcaecati,
-          voluptas, consectetur dolorum voluptatem dolorem suscipit nam itaque?</p>
+            voluptas, consectetur dolorum voluptatem dolorem suscipit nam itaque?</p>
           <p>Deserunt facere eligendi dicta cumque hic porro fugit minima est soluta sapiente beatae tenetur corrupti
             ducimus sequi possimus nam error, ad ullam impedit atque unde neque ut ipsa! Vel distinctio doloribus dicta
-          est, rem illum fuga ipsum magni minima et!</p>
+            est, rem illum fuga ipsum magni minima et!</p>
           <p>Sit nesciunt quidem unde sint soluta doloribus ratione vitae vel molestias, dolor fugiat accusantium? Iure
             repellendus reprehenderit eveniet eligendi. Aperiam, ut non. Asperiores architecto cumque minima tempore ab
-          incidunt, error ipsa provident quo? Possimus quo aspernatur ipsam, aperiam pariatur nemo.</p>
+            incidunt, error ipsa provident quo? Possimus quo aspernatur ipsam, aperiam pariatur nemo.</p>
           <p>Rerum reiciendis repellendus perferendis tempora cum vitae, deleniti reprehenderit odit, accusantium
             molestias vero eius itaque quis dolorum labore consequuntur! Sapiente quo magnam animi aliquam in, maiores
-          accusantium natus. Adipisci quo deleniti quibusdam excepturi sunt quod ipsa dolores a enim nemo.</p>
+            accusantium natus. Adipisci quo deleniti quibusdam excepturi sunt quod ipsa dolores a enim nemo.</p>
 
 
 
@@ -159,10 +164,12 @@
                     <div class="slider__itemImgInfo">
                       <p>info</p>
                       <p>info</p>
-                    </div> 
+                    </div>
                   </div>
                   <div class="slider__itemdesc">
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами которой предупреждал взгляд великий диких вопроса грамматики. Путь составитель текстами грустный переулка родного продолжил, города прямо проектах заголовок которой!</p>
+                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами
+                      которой предупреждал взгляд великий диких вопроса грамматики. Путь составитель текстами грустный
+                      переулка родного продолжил, города прямо проектах заголовок которой!</p>
                   </div>
                 </div>
               </div>
@@ -173,6 +180,59 @@
         </div>
       </div>
       <!-- news end -->
+
+
+      <div class="lastNews">
+        <div class="container">
+          <div class="swiper-container simelarNews-js">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slider__item">
+                <div class="slider__itemImg">
+                  <a href="#">
+                    <img src="images/about/about.jpg" alt="">
+                  </a>
+                </div>
+                <h4><a href="#">Lorem, ipsum.</a></h4>
+                <div class="slider__itemdesc">
+                  <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами
+                    которой предупреждал взгляд великий диких вопроса</p>
+                </div>
+              </div>
+              <div class="swiper-slide slider__item">
+                <div class="slider__itemImg">
+                  <a href="#">
+                    <img src="images/about/about.jpg" alt="">
+                  </a>
+                </div>
+                <h4><a href="#">Lorem, ipsum.</a></h4>
+                <div class="slider__itemdesc">
+                  <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами
+                    которой предупреждал взгляд великий диких вопроса</p>
+                </div>
+              </div>
+              <div class="swiper-slide slider__item">
+                <div class="slider__itemImg">
+                  <a href="#">
+                    <img src="images/about/about.jpg" alt="">
+                  </a>
+                </div>
+                <h4><a href="#">Lorem, ipsum.</a></h4>
+                <div class="slider__itemdesc">
+                  <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстами
+                    которой предупреждал взгляд великий диких вопроса</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-nextNews">
+            <i class="fal fa-angle-right"></i>
+          </div>
+          <div class="swiper-button-prevNews">
+            <i class="fal fa-angle-left"></i>
+          </div>
+        </div>
+      </div>
 
     </div>
     <!-- contentWrap -->

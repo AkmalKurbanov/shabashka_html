@@ -84,20 +84,25 @@
             </div>
             <div class="col-lg-8 order-lg-1">
               <div class="header__nav mnu-js">
-                <ul>
-                  <li class="header__item header__item--active"><a  class="header__link" href="#">Главная</a></li>
-                  <li class="header__item"><a  class="header__link" href="#">О нас</a></li>
-                  <li class="header__item"><a  class="header__link" href="#">Туры</a></li>
-                  <li class="header__item"><a  class="header__link" href="#">Галерея</a></li>
-                  <li class="header__item"><a  class="header__link" href="#">Новости</a></li>
-                  <li class="header__item"><a  class="header__link" href="#">Контакты</a>
-                    <ul class="header__social">
-                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <ul class="header__firstLevel">
+                  <li class="header__item header__item--active"><a class="header__link" href="#">Главная</a></li>
+                  <li class="header__item"><a class="header__link" href="#about" data-scroll>О нас</a></li>
+                  <li class="header__item"><a class="header__link" href="#">Туры</a> <i class="fal fa-angle-right triggerSubmenu-js"></i>
+                    <ul class="header__dropDownMenu subMnu-js">
+                      <li><a href="#">Туры 1</a></li>
+                      <li><a href="#">Туры 2</a></li>
+                      <li><a href="#">Туры 3</a></li>
                     </ul>
                   </li>
+                  <li class="header__item"><a class="header__link" href="#">Галерея</a></li>
+                  <li class="header__item"><a class="header__link" href="#">Новости</a></li>
+                  <li class="header__item"><a class="header__link" href="#contacts" data-scroll>Контакты</a></li>
+                  <ul class="header__social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
                 </ul>
                 <form class="header__search">
                   <input placeholder="Поиск ..." class="header__searchInput" type="text">
@@ -115,7 +120,7 @@
 
       <!-- contacts -->
       <div class="contacts">
-        
+
       </div>
       <!-- contacts end -->
 

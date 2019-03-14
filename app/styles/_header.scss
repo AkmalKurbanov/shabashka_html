@@ -128,7 +128,7 @@
     margin: 0;
     padding: 0;
     display: inline-block !important;
-    top: -49px;
+    top: -50px;
     right: 70px;
     display: none;
 
@@ -317,6 +317,7 @@
       max-width: 50px;
       width: 100%;
       cursor: pointer;
+      font-size: 12px;
 
       option {
         background-color: $mc !important;
