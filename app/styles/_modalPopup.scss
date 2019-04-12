@@ -5,7 +5,7 @@
   max-width: 500px;
   width: 100%;
   min-height: 150px;
-    
+
   @media (max-width: 1367.98px) {
     min-height: 200px;
     max-width: 450px;
@@ -44,12 +44,12 @@
     &__img {
       max-width: 200px;
       width: 100%;
-      position: absolute;
-      top: -20px;
-      right: -20px;
       -webkit-box-shadow: -4px 5px 5px 0px rgba(0, 0, 0, 0.5);
       -moz-box-shadow: -4px 5px 5px 0px rgba(0, 0, 0, 0.5);
       box-shadow: -4px 5px 5px 0px rgba(0, 0, 0, 0.5);
+      float: right;
+      margin-top: -30px;
+      margin-right: -30px;
 
       @media (max-width: 1367.98px) {
         max-width: 150px;
@@ -90,19 +90,6 @@
 
         @media (max-width: 1199.98px) {
           font-size: 13px;
-        }
-
-        &:first-child {
-          width: 100%;
-          max-width: 60%;
-
-          @media (max-width: 1367.98px) {
-            max-width: 70%;
-          }
-
-          @media (max-width: 1199.98px) {
-            max-width: 75%;
-          }
         }
       }
     }

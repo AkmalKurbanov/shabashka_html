@@ -30,6 +30,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    padding-top: 30px;
   }
 
   &__itemWrap {
@@ -43,6 +44,14 @@
 
     p {
       font-size: 14px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 10px;
+    img {
+      width: 100%;
+      max-width: 100%;
     }
   }
 
