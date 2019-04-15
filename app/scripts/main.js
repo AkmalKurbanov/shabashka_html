@@ -21,7 +21,11 @@ $(document).ready(function () {
 
 
 
-
+// select
+  $('.selected').on('click', function () {
+    $('.selectList').slideToggle();
+  });
+// select end
 
 
   // animation

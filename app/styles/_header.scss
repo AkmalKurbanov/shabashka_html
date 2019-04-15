@@ -309,22 +309,70 @@
     align-items: center;
     justify-content: space-around;
 
-    select {
-      background: none;
-      border: none;
-      color: #ffffff;
-      outline: none;
-      max-width: 50px;
-      width: 100%;
-      cursor: pointer;
-      font-size: 12px;
+    .select {
+      font-size: 13px;
 
-      option {
-        background-color: $mc !important;
-        border: none;
+      .selected {
         cursor: pointer;
+        position: relative;
+      }
+
+      p {
+        margin: 0;
+        color: #ffffff;
+        padding-left: 5px;
+
+        i {
+          margin-left: 10px;
+        }
+      }
+
+      .selectList {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        display: none;
+        max-width: 43px;
+        width: 100%;
+        border: 1px solid #fff;
+        background-color: rgb(40, 117, 187);
+        z-index: 2;
+
+        li {
+          list-style-type: none;
+
+          a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            transition: all .3s;
+            padding-left: 5px;
+
+            &:hover {
+              background-color: $mc;
+            }
+          }
+        }
       }
     }
+
+
+    // select {
+    //   background: none;
+    //   border: none;
+    //   color: #ffffff;
+    //   outline: none;
+    //   max-width: 50px;
+    //   width: 100%;
+    //   cursor: pointer;
+    //   font-size: 12px;
+
+    //   option {
+    //     background-color: $mc !important;
+    //     border: none;
+    //     cursor: pointer;
+    //   }
+    // }
   }
 
   &__feedBack {
