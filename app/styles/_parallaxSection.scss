@@ -13,10 +13,10 @@
       transition: all 20s;
       -webkit-animation: zoomin 20s linear;
       animation: zoomin 20s infinite linear;
-
+      background-position: center center;
+      background-size: cover;
       @media (max-width: 991.98px) {
         animation: none;
-        background-position: bottom left;
       }
     }
 
